@@ -1,0 +1,5 @@
+[user]
+	name = Dan Hughes
+	email = danhughes.dh+github@gmail.com
+[branch]
+	autosetuprebase = always
