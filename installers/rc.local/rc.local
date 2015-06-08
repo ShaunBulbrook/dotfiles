@@ -18,12 +18,14 @@ mount -a
 PUBLICIP=$(curl icanhazip.com)
 LOCALIP=$(hostname -I)
 MACHINE=$(hostname)
+# DATE=$(date +"%a %H:%M:%S")
 
 # Send boot notification
 curl \
 	-u XXAPIKEYXX: https://api.pushbullet.com/v2/pushes \
 	-d type=note \
 	-d title="$MACHINE" \
+	# -d title="$MACHINE ($DATE)" \
 	-d body="$LOCALIP : $PUBLICIP" \
 	> /dev/null
 
