@@ -15,7 +15,7 @@
 mount -a
 
 # Figure out machine details
-PUBLICIP=$(curl -sS ifconfig.me)
+PUBLICIP=$(curl icanhazip.com)
 LOCALIP=$(hostname -I)
 MACHINE=$(hostname)
 
