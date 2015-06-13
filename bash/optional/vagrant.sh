@@ -1,4 +1,5 @@
 alias vup='atom && vagrant up'
 alias hup='homestead up; alert'
 alias vdown='vagrant suspend && exit'
+alias hdown='homestead suspend; alert; exit'
 alias vms='vagrant global-status'
