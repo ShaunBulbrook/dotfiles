@@ -8,4 +8,3 @@ function serve() {
 		echo "  serve domain path"
 	fi
 }
-export APP_ENV='local'
