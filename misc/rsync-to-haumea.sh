@@ -8,11 +8,10 @@ fi
 
 rsync \
 	-avz \
-	-e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
 	$1 \
 	192.168.1.23:/home/pi/inbox \
 	--remove-source-files \
-    --progress
+	--progress
 
 if [[ $? -eq 0 ]]; then
     TITLE="Sent to Haumea"
