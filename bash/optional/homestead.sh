@@ -8,3 +8,5 @@ function serve() {
 		echo "  serve domain path"
 	fi
 }
+
+alias cat='pygmentize -g'
