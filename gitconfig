@@ -3,3 +3,5 @@
 	email = danhughes.dh+github@gmail.com
 [branch]
 	autosetuprebase = always
+[push]
+	default = simple
