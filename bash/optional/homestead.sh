@@ -1,3 +1,4 @@
+alias phpunit='./vendor/bin/phpunit'
 function serve() {
 	if [[ "$1" && "$2" ]]; then
 		sudo dos2unix /vagrant/scripts/serve.sh
