@@ -1,0 +1,23 @@
+"*":
+  welcome:
+    showOnStartup: false
+  core:
+    disabledPackages: [
+      "wrap-guide"
+    ]
+  editor:
+    invisibles: {}
+    tabLength: 4
+    showIndentGuide: true
+    softWrap: true
+    softTabs: false
+    zoomFontWhenCtrlScrolling: false
+    fontFamily: "Ubuntu Mono"
+    fontSize: 15
+    showInvisibles: true
+  whitespace:
+    ensureSingleTrailingNewline: true
+  "linter-phpcs":
+    phpExecutablePath: "/usr/bin/php"
+  "one-dark-ui":
+    layoutMode: "Spacious"
