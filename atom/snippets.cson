@@ -25,3 +25,17 @@
     \t${2:// code}
     }
     """
+
+'.source.js':
+  'AMD module':
+    'prefix': 'amd'
+    'body': """
+    define([
+    \t'jquery',
+    \t$1
+    ] , function ($, $2) {
+    \treturn function (a) {
+    \t\t${3: //code}
+    \t};
+    });
+    """
