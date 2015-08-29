@@ -9,7 +9,7 @@ fi
 for file in "$@" ; do
     rsync \
     	-avz \
-    	$file \
+    	"$file" \
     	192.168.1.23:/home/pi/inbox \
     	--remove-source-files \
     	--progress
