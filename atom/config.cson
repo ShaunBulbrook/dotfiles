@@ -5,6 +5,7 @@
     disabledPackages: [
       "wrap-guide"
     ]
+    autoHideMenuBar: true
   editor:
     invisibles: {}
     tabLength: 4
