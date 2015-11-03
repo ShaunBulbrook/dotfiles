@@ -13,9 +13,9 @@
     softWrap: true
     softTabs: false
     zoomFontWhenCtrlScrolling: false
-    fontFamily: "Ubuntu Mono"
-    fontSize: 15
     showInvisibles: true
+    fontSize: 16
+    fontFamily: "Inconsolata"
   whitespace:
     ensureSingleTrailingNewline: true
   "linter-phpcs":
