@@ -6,6 +6,10 @@
       "wrap-guide"
     ]
     autoHideMenuBar: true
+    themes: [
+      "one-dark-ui"
+      "atom-dark-syntax"
+    ]
   editor:
     invisibles: {}
     tabLength: 4
