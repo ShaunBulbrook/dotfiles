@@ -15,7 +15,7 @@
 mount -a
 
 # Figure out machine details
-PUBLICIP=$(curl icanhazip.com)
+PUBLICIP=$(curl -sS canihazip.com/s)
 LOCALIP=$(hostname -I)
 MACHINE=$(hostname)
 # DATE=$(date +"%a %H:%M:%S")
