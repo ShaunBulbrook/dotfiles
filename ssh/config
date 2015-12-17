@@ -1,0 +1,25 @@
+# =====
+# VPS servers
+# =====
+Host web0
+	User xes
+	HostName web0.xes.io
+
+Host web1
+	User xes
+	HostName web1.xes.io
+
+# =====
+# Raspberry Pi's
+# =====
+Host haumea
+	User pi
+	HostName 192.168.0.150
+
+Host nix
+	User pi
+	HostName 192.168.0.152
+
+Host ixion
+	User pi
+	HostName 192.168.0.151
