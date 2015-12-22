@@ -18,8 +18,8 @@
     softTabs: false
     zoomFontWhenCtrlScrolling: false
     showInvisibles: true
-    fontSize: 16
-    fontFamily: "Inconsolata"
+    fontSize: 15
+    fontFamily: "Hack"
   whitespace:
     ensureSingleTrailingNewline: true
   "linter-phpcs":
