@@ -20,7 +20,7 @@ fi
 # BEGIN OWN STUFF
 # ======================
 
-dfd="/home/$(whoami)/.dotfiles"
+dfd="$HOME/.dotfiles"
 [[ -d "$HOME/bin" ]] && PATH="$HOME/bin:$PATH"
 
 if [[ -f ${dfd}/bash/settings.sh ]]; then

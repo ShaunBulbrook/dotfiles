@@ -1,12 +1,10 @@
 #!/bin/bash
 
-USER=$(whoami)
-HOME="/home/$USER"
 SRC="$HOME/.dotfiles/atom"
 DEST="$HOME/.atom"
 BAK="$HOME/atom.bak"
 
-files="config.cson keymap.cson styles.less"
+files="config.cson keymap.cson snippets.cson styles.less"
 
 mkdir -p "$BAK"
 

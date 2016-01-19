@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 up() {
     COUNTER=$1
     while [[ $COUNTER -gt 0 ]]

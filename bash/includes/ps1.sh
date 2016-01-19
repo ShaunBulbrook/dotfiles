@@ -1,10 +1,10 @@
-# START COLOUR      \[\033[
-# END COLOUR        \]
+#!/usr/bin/env bash
 
+echo ps1
 PS1='\
 \n\
 \[\033[${USERNAMECOLOUR}\]\
-\u@\h\
+\h\
 \[\033[1;00m\] \
 \[\033[${PWDCOLOUR}\]\
 \w\

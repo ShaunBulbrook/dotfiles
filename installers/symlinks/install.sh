@@ -3,8 +3,6 @@
 # This script creates symlinks from the home directory to any desired dotfiles in $NEW
 ############################
 
-USER=$(whoami)
-HOME="/home/$USER"
 NEW="$HOME/.dotfiles"
 BAK="$HOME/.old-dotfiles"
 
