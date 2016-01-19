@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-echo ps1
 PS1='\
 \n\
 \[\033[${USERNAMECOLOUR}\]\
