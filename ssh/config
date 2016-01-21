@@ -16,10 +16,10 @@ Host haumea
 	User pi
 	HostName 192.168.0.150
 
+Host tethys
+	User pi
+	HostName 192.168.0.151
+
 Host nix
 	User pi
 	HostName 192.168.0.152
-
-Host ixion
-	User pi
-	HostName 192.168.0.151
