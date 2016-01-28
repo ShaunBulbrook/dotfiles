@@ -16,7 +16,7 @@
     showIndentGuide: true
     softWrap: true
     softTabs: false
-	tabType: "hard"
+    tabType: "hard"
     zoomFontWhenCtrlScrolling: false
     showInvisibles: true
     fontSize: 15
