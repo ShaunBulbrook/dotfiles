@@ -8,7 +8,7 @@
     autoHideMenuBar: true
     themes: [
       "one-dark-ui"
-      "atom-dark-syntax"
+      "atom-material-syntax"
     ]
   editor:
     invisibles: {}
