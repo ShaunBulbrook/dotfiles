@@ -15,7 +15,7 @@
 # =============================
 ".js":
 	"AMD module":
-		prefix: "amd",
+		prefix: "amd"
 		body: """
 		define([
 			'jquery',
@@ -26,3 +26,9 @@
 			};
 		});
 		"""
+	"Quick log":
+		prefix: "here"
+		body: "console.log('here');"
+	"Throw error":
+		prefix: "throw"
+		body: "if (${1:err}) throw ${1:err};"
