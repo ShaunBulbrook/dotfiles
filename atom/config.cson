@@ -8,7 +8,7 @@
     autoHideMenuBar: true
     themes: [
       "seti-ui"
-      "seti-syntax"
+      "duotone-dark-space-syntax"
     ]
   editor:
     invisibles: {}
