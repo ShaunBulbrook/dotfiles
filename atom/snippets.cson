@@ -32,3 +32,6 @@
 	"Throw error":
 		prefix: "throw"
 		body: "if (${1:err}) throw ${1:err};"
+	"Use strict":
+		prefix: "strict"
+		body: "'use strict';"
