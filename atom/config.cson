@@ -1,26 +1,26 @@
 "*":
-  welcome:
-    showOnStartup: false
   core:
+    autoHideMenuBar: true
     disabledPackages: [
       "wrap-guide"
     ]
-    autoHideMenuBar: true
     themes: [
       "seti-ui"
       "duotone-dark-space-syntax"
     ]
   editor:
+    fontFamily: "Hack"
+    fontSize: 15
     invisibles: {}
-    tabLength: 4
-    showIndentGuide: true
-    softWrap: true
+    showIndentGuide: false
+    showInvisibles: true
     softTabs: false
+    softWrap: true
+    tabLength: 4
     tabType: "hard"
     zoomFontWhenCtrlScrolling: false
-    showInvisibles: true
-    fontSize: 15
-    fontFamily: "Hack"
+  welcome:
+    showOnStartup: false
   whitespace:
     ensureSingleTrailingNewline: true
   "exception-reporting":
