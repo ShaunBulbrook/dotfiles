@@ -19,11 +19,15 @@
 		body: """
 		define([
 			'jquery',
-			$1
-		], function ($, $2) {
-			return function (a) {
-				${3://code}
-			};
+			'core/_accessorMutatorMixin',
+			'core/compose',
+			'core/lang/array',
+			'core/lang/function',
+			'widget/_Base'
+		], function ($, _accessorMutatorMixin, compose, arr, fnc, _Base) {
+			return compose(_Base, _accessorMutatorMixin, {
+				$1
+			});
 		});
 		"""
 	"Quick log":
