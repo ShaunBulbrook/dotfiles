@@ -11,11 +11,12 @@ shopt -s nullglob
 input=$1
 output=$2
 
-for FILE in "$input"/*; do
-	if [ ${FILE: -4} != ".bts" ]; then
-		sudo chown root: "$FILE"
+find "$input" -type f -print0 | while IFS= read -r -d $'\0' FILE; do
+	filename=$(basename "$FILE")
+
+	if [ ! -f "$output/$filename" ]; then
 		sudo mv "$FILE" "$output"
-		filename=$(basename "$FILE")
+		sudo chown root: "$output/$filename"
 
 		if [[ $? -eq 0 ]]; then
 			curl -sS \
