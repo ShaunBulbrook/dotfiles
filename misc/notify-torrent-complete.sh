@@ -1,9 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
 source /home/pi/.dotfiles/bash/settings.sh
 
 id=$1
 name=$2
 path=$3
+
+bash $path/../rsyncmv.sh $path /media/nas/torrents
 
 curl \
 		-u "$PUSHBULLET_API_KEY:" https://api.pushbullet.com/v2/pushes \
