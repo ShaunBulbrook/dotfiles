@@ -12,6 +12,7 @@
     fontFamily: "Hack"
     fontSize: 15
     invisibles: {}
+    lineHeight: 1.35
     showIndentGuide: false
     showInvisibles: true
     softTabs: false
@@ -19,9 +20,9 @@
     tabLength: 4
     tabType: "hard"
     zoomFontWhenCtrlScrolling: false
+  "exception-reporting":
+    userId: "9645903c-8b1f-6900-4446-96f77aeaf614"
   welcome:
     showOnStartup: false
   whitespace:
     ensureSingleTrailingNewline: true
-  "exception-reporting":
-    userId: "9645903c-8b1f-6900-4446-96f77aeaf614"
