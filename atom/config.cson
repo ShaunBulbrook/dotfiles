@@ -1,11 +1,26 @@
 "*":
+  "atom-material-ui":
+    colors:
+      abaseColor:
+        red: 255
+        green: 167
+        blue: 38
+        alpha: 1
+      accentColor:
+        red: 159
+        green: 105
+        blue: 24
+        alpha: 1
+      predefinedColor: "Orange"
+    treeView:
+      compactList: true
   core:
     autoHideMenuBar: true
     disabledPackages: [
       "wrap-guide"
     ]
     themes: [
-      "seti-ui"
+      "atom-material-ui"
       "duotone-dark-space-syntax"
     ]
   editor:
