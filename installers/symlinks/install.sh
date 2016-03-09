@@ -1,12 +1,12 @@
 #!/bin/bash
 ############################
-# This script creates symlinks from the home directory to any desired dotfiles in $NEW
+# This script creates symlinks from the home directory to any desired dotfiles in $DOTFILES
 ############################
 
-NEW="$HOME/.dotfiles"
+DOTFILES="$HOME/.dotfiles"
 BAK="$HOME/.old-dotfiles"
 
-files="bashrc ansible.cfg gitconfig profile inputrc"
+files="bashrc ansible.cfg gitconfig profile inputrc jshintrc minttyrc"
 
 mkdir -p "$BAK"
 
@@ -18,7 +18,7 @@ for file in $files; do
 		else
 			rm $HOME/.$file
 		fi
-		ln -s $NEW/$file $HOME/.$file && echo "Installed $file"
+		ln -s $DOTFILES/conf/$file $HOME/.$file && echo "Installed $file"
 	else
 		echo "Skipped unfound $file"
 	fi
