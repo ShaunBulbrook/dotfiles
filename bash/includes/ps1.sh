@@ -21,4 +21,4 @@ usrcol="\e[${USERNAMECOLOUR}"
 pwdcol="\e[${PWDCOLOUR}"
 r='\e[0m'
 
-PS1="\n${usrcol}\h${r} ${pwdcol}\w${r}\n${white}λ${r} "
+PS1="\n${usrcol}\h${r} ${pwdcol}\w${r}\n${darkgray}»${r} "
