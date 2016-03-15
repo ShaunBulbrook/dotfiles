@@ -1,7 +1,7 @@
 @echo off
 
 echo Make sure this is running as admin!
-set files=bashrc,ansible.cfg,gitconfig,profile,inputrc,jshintrc,minttyrc
+set files=ansible.cfg,bashrc,gitconfig,hgrc,inputrc,jshintrc,minttyrc,profile
 
 for %%f in (%files%) do (
 	del %HOMEPATH%\.%%f

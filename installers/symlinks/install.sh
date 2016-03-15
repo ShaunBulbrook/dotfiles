@@ -6,7 +6,7 @@
 DOTFILES="$HOME/.dotfiles"
 BAK="$HOME/.old-dotfiles"
 
-files="bashrc ansible.cfg gitconfig profile inputrc jshintrc minttyrc"
+files="ansible.cfg bashrc gitconfig hgrc inputrc jshintrc minttyrc profile"
 
 mkdir -p "$BAK"
 

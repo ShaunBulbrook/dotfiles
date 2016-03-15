@@ -1,0 +1,12 @@
+[extensions]
+record=
+color=
+[ui]
+editor=nano
+username=dan.hughes <dan.hughes@heathwallace.com>
+ignore=C:\Users\ddhughes\Documents\hgignore_global.txt
+slash=true
+[plugins]
+shelve=
+[alias]
+who=annotate --user --number
