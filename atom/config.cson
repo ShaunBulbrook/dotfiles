@@ -1,43 +1,44 @@
 "*":
-	"atom-material-ui":
-		colors:
-			abaseColor:
-				red: 255
-				green: 128
-				blue: 0
-				alpha: 1
-			accentColor:
-				red: 255
-				green: 128
-				blue: 0
-				alpha: 1
-			predefinedColor: "Orange"
-		treeView:
-			compactList: true
-	core:
-		autoHideMenuBar: true
-		disabledPackages: [
-			"wrap-guide"
-		]
-		themes: [
-			"atom-material-ui"
-			"duotone-dark-space-syntax"
-		]
-	editor:
-		fontFamily: "Hack"
-		fontSize: 15
-		invisibles: {}
-		lineHeight: 1.35
-		showIndentGuide: false
-		showInvisibles: true
-		softTabs: false
-		softWrap: true
-		tabLength: 4
-		tabType: "hard"
-		zoomFontWhenCtrlScrolling: false
-	"exception-reporting":
-		userId: "9645903c-8b1f-6900-4446-96f77aeaf614"
-	welcome:
-		showOnStartup: false
-	whitespace:
-		ensureSingleTrailingNewline: true
+  "atom-material-ui":
+    colors:
+      abaseColor:
+        red: 255
+        green: 128
+        blue: 0
+        alpha: 1
+      accentColor:
+        red: 255
+        green: 128
+        blue: 0
+        alpha: 1
+      predefinedColor: "Orange"
+    fonts: {}
+    treeView:
+      compactList: true
+  core:
+    autoHideMenuBar: true
+    disabledPackages: [
+      "wrap-guide"
+    ]
+    themes: [
+      "atom-material-ui"
+      "duotone-dark-space-syntax"
+    ]
+  editor:
+    fontFamily: "Hack"
+    fontSize: 15
+    invisibles: {}
+    lineHeight: 1.35
+    showIndentGuide: false
+    showInvisibles: true
+    softTabs: false
+    softWrap: true
+    tabLength: 4
+    tabType: "hard"
+    zoomFontWhenCtrlScrolling: false
+  "exception-reporting":
+    userId: "9645903c-8b1f-6900-4446-96f77aeaf614"
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: true
