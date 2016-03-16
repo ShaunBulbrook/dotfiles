@@ -3,13 +3,13 @@
     colors:
       abaseColor:
         red: 255
-        green: 167
-        blue: 38
+        green: 128
+        blue: 0
         alpha: 1
       accentColor:
-        red: 159
-        green: 105
-        blue: 24
+        red: 255
+        green: 128
+        blue: 0
         alpha: 1
       predefinedColor: "Orange"
     treeView:
