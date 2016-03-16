@@ -11,12 +11,11 @@ shopt -s nullglob
 input=$1
 output=$2
 
-find "$input" -type f -print0 | while IFS= read -r -d $'\0' FILE; do
+find "$input" -type f -not -path '*/\.*' -print0 | while IFS= read -r -d $'\0' FILE; do
 	filename=$(basename "$FILE")
 
 	if [ ! -f "$output/$filename" ]; then
-		sudo mv "$FILE" "$output"
-		sudo chown root: "$output/$filename"
+		mv "$FILE" "$output"
 
 		if [[ $? -eq 0 ]]; then
 			curl -sS \
