@@ -3,13 +3,13 @@
     colors:
       abaseColor:
         red: 255
-        green: 128
-        blue: 0
+        green: 167
+        blue: 38
         alpha: 1
       accentColor:
-        red: 255
-        green: 128
-        blue: 0
+        red: 159
+        green: 105
+        blue: 24
         alpha: 1
       predefinedColor: "Orange"
     fonts: {}
