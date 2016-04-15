@@ -2,19 +2,20 @@
   "atom-material-ui":
     colors:
       abaseColor:
-        red: 255
-        green: 167
-        blue: 38
-        alpha: 1
-      accentColor:
-        red: 159
-        green: 105
-        blue: 24
+        red: 0
+        green: 64
+        blue: 128
         alpha: 1
       predefinedColor: "Orange"
     fonts: {}
+    tabs:
+      tintedTabBar: true
     treeView:
+      blendTabs: true
       compactList: true
+    ui:
+      panelContrast: true
+      panelShadows: true
   core:
     autoHideMenuBar: true
     disabledPackages: [
@@ -38,10 +39,14 @@
     zoomFontWhenCtrlScrolling: false
   "exception-reporting":
     userId: "9645903c-8b1f-6900-4446-96f77aeaf614"
+  "file-icons":
+    coloured: false
+    tabPaneIcon: false
   "line-ending-selector":
     defaultLineEnding: "LF"
   linter: {}
   "linter-jshint": {}
+  minimap: {}
   welcome:
     showOnStartup: false
   whitespace:
