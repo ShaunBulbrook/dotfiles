@@ -40,6 +40,8 @@
     userId: "9645903c-8b1f-6900-4446-96f77aeaf614"
   "line-ending-selector":
     defaultLineEnding: "LF"
+  linter: {}
+  "linter-jshint": {}
   welcome:
     showOnStartup: false
   whitespace:
