@@ -9,3 +9,11 @@ atom-text-editor {
 .theme-atom-material-ui /deep/ ::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.05);
 }
+
+atom-text-editor::shadow .editor--private .lines div {
+  transition: transform .15s ease-out; // customize the duration.
+}
+
+atom-text-editor::shadow .editor--private .cursors div {
+  transition: opacity .4s; // customize the duration.
+}
