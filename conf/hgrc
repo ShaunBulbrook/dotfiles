@@ -9,4 +9,4 @@ slash=true
 [plugins]
 shelve=
 [alias]
-who=annotate --user --number
+who=annotate --user -v --number
