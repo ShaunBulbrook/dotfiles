@@ -2,7 +2,7 @@
 record=
 color=
 [ui]
-editor=nano
+editor="C:\Program Files (x86)\Notepad++\notepad++.exe"
 username=dan.hughes <dan.hughes@heathwallace.com>
 ignore=C:\Users\ddhughes\Documents\hgignore_global.txt
 slash=true
