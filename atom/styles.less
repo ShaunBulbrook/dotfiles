@@ -1,15 +1,33 @@
+@import "syntax-variables";
+@import "ui-variables";
+
+// Remove the annoying deprecation alerts for packages
 .status-bar .deprecation-cop-status {
-  visibility: hidden;
+	visibility: hidden;
 }
 
-atom-text-editor {
-  text-rendering: optimizeLegibility;
+// Enable ligatures
+atom-text-editor::shadow {
+	text-rendering: optimizeLegibility;
 }
 
+// Don't use the bright Material theme colour for scrollbar
 .theme-atom-material-ui /deep/ ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.05);
+	background: rgba(255, 255, 255, 0.05);
 }
 
+// Pulse the cursor instead of flashing it
 atom-text-editor::shadow .editor--private .cursors div {
-  transition: opacity .4s;
+	transition: opacity .4s;
+}
+
+// Make comments non-italic
+atom-text-editor::shadow .comment {
+	font-style: normal;
+}
+
+// Highlights trailing whitespace except on the cursor line
+atom-text-editor::shadow .line:not(.cursor-line) .trailing-whitespace {
+	background-color: @background-color-error;
+	color: contrast(@background-color-error);
 }
