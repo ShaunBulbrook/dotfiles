@@ -1,10 +1,12 @@
 @echo off
-
 echo Make sure this is running as admin!
-set files=ansible.cfg,bashrc,gitconfig,hgrc,inputrc,jshintrc,minttyrc,profile
+setlocal disableDelayedExpansion
+
+set "files="
+for %%F in (%HOMEPATH%\.dotfiles\conf\*) do call set files=%%files%%,%%~nF
 
 for %%f in (%files%) do (
-	del %HOMEPATH%\.%%f
+	IF EXIST %HOMEPATH%\.%%f del /F %HOMEPATH%\.%%f
 	mklink %HOMEPATH%\.%%f %HOMEPATH%\.dotfiles\conf\%%f
 )
 
