@@ -46,7 +46,8 @@
     defaultLineEnding: "LF"
   linter: {}
   "linter-jshint": {}
-  minimap: {}
+  minimap:
+    displayMinimapOnLeft: true
   welcome:
     showOnStartup: false
   whitespace:
