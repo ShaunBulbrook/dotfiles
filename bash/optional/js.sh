@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 function beautify {
 	if [ $# -lt 1 ]; then
 		echo "Usage: $FUNCNAME <file...>"
