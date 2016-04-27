@@ -1,3 +1,5 @@
-if [ $(docker-machine ls | grep -q default | grep -q Running) ] ; then
+#!/usr/bin/env bash
+
+if [ "$(docker-machine status)" == "Running" ] ; then
 	eval $(docker-machine env default)
 fi
