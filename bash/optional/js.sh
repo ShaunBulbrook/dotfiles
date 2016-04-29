@@ -5,7 +5,7 @@ function beautify {
 	fi
 
 	for file in "$@"; do
-		js-beautify --jslint-happy --indent-with-tabs --end-with-newline -f "$file" -o "$file"
+		js-beautify --config "~/.jsbeautifyrc" -f "$file" -o "$file"
 	done
 }
 
