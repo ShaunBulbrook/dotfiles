@@ -6,11 +6,9 @@
 DOTFILES="$HOME/.dotfiles"
 BAK="$HOME/.old-dotfiles"
 
-files="ansible.cfg bashrc gitconfig hgrc inputrc jshintrc minttyrc profile"
-
 mkdir -p "$BAK"
 
-for file in $files; do
+for file in "$DOTFILES/conf/*"; do
 	if [[ -f "$HOME/.$file" ]]; then
 		if [[ ! -f "$BAK/.$file" ]]; then
 			mv $HOME/.$file $BAK
