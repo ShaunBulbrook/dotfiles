@@ -6,18 +6,18 @@
 DOTFILES="$HOME/.dotfiles"
 BAK="$HOME/.old-dotfiles"
 
-mkdir -p "$BAK"
+# mkdir -p "$BAK"
 
-for file in "$DOTFILES/conf/*"; do
-	if [[ -f "$HOME/.$file" ]]; then
-		if [[ ! -f "$BAK/.$file" ]]; then
-			mv $HOME/.$file $BAK
-			echo "Backed up .$file"
-		else
-			rm $HOME/.$file
-		fi
-		ln -s $DOTFILES/conf/$file $HOME/.$file && echo "Installed $file"
-	else
-		echo "Skipped unfound $file"
+CONFS="$DOTFILES/conf/*"
+
+for f in $CONFS; do
+
+	file="$HOME/.$(basename "$f")"
+
+	if [[ -e "$file" ]]; then
+		rm "$file"
 	fi
+
+	ln -s "$f" "$file" && echo "Installed $file"
+
 done
