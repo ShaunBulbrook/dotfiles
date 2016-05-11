@@ -21,6 +21,9 @@
     disabledPackages: [
       "wrap-guide"
     ]
+    packagesWithKeymapsDisabled: [
+      "tool-bar"
+    ]
     themes: [
       "atom-material-ui"
       "duotone-dark-space-syntax"
@@ -46,8 +49,9 @@
     defaultLineEnding: "LF"
   linter: {}
   "linter-jshint": {}
-  minimap:
-    displayMinimapOnLeft: true
+  minimap: {}
+  "tool-bar":
+    position: "Left"
   welcome:
     showOnStartup: false
   whitespace:
