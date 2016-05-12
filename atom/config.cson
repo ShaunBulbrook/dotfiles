@@ -29,10 +29,10 @@
       "duotone-dark-space-syntax"
     ]
   editor:
-    fontFamily: "Hack"
-    fontSize: 15
+    fontFamily: "Inconsolata"
+    fontSize: 18
     invisibles: {}
-    lineHeight: 1.35
+    lineHeight: 1.25
     showIndentGuide: false
     showInvisibles: true
     softTabs: false
