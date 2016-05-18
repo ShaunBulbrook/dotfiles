@@ -18,6 +18,7 @@
     lineHeight: 1.25
     showIndentGuide: false
     showInvisibles: true
+    showLineNumbers: false
     softTabs: false
     softWrap: true
     tabLength: 4
