@@ -9,7 +9,7 @@
     ]
     themes: [
       "nucleus-dark-ui"
-      "duotone-dark-space-syntax"
+      "firewatch-syntax"
     ]
   editor:
     fontFamily: "Inconsolata"
