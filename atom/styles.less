@@ -35,3 +35,15 @@ atom-text-editor::shadow .line:not(.cursor-line) .trailing-whitespace {
 atom-workspace {
 	font-family: Source Sans Pro;
 }
+
+atom-text-editor::shadow .gutter .line-number {
+	color: transparent;
+
+	transition: color 0.25s ease-out;
+
+	&.git-line-added,
+	&.git-line-removed,
+	&.git-line-modified {
+		color: transparent;
+	}
+}
