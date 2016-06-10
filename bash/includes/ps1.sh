@@ -1,24 +1,39 @@
 #!/usr/bin/env bash
 
-black='\e[0;30m'
-red='\e[0;31m'
-green='\e[0;32m'
-brown='\e[0;33m'
-purple='\e[0;35m'
-blue='\e[0;34m'
-cyan='\e[0;36m'
-lightgray='\e[0;37m'
-darkgray='\e[1;30m'
-lightred='\e[1;31m'
-lightgreen='\e[1;32m'
-yellow='\e[1;33m'
-lightblue='\e[1;34m'
-lightpurple='\e[1;35m'
-lightcyan='\e[1;36m'
-white='\e[1;37m'
+r="\e[0m"
+bold="\e[1m"
+dim="\e[2m"
 
-usrcol="\e[${USERNAMECOLOUR}"
-pwdcol="\e[${PWDCOLOUR}"
-r='\e[0m'
+black="\e[30m"
+red="\e[31m"
+green="\e[32m"
+yellow="\e[33m"
+blue="\e[34m"
+magenta="\e[35m"
+cyan="\e[36m"
+lightgray="\e[37m"
+darkgray="\e[90m"
+lightred="\e[91m"
+lightgreen="\e[92m"
+lightyellow="\e[93m"
+lightblue="\e[94m"
+lightmagenta="\e[95m"
+lightcyan="\e[96m"
+white="\e[97m"
 
-PS1="\n${usrcol}\h${r} ${pwdcol}\w${r}\n${darkgray}»${r} "
+usrcol="${!USERNAMECOLOUR}"
+pwdcol="${!PWDCOLOUR}"
+
+PS1=''
+
+PS1+="\n${usrcol}\h${r} ${pwdcol}\w${r}"
+
+PS1+="${lightgray}"
+PS1+='`__git_ps1`'
+PS1+="${r}"
+
+PS1+="\n${darkgray}»${r} "
+
+export PS1
+
+# export PS1="\\w\$(__git_ps1 '(%s)') \$ "
