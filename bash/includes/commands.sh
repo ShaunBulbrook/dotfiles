@@ -12,11 +12,3 @@ nano() {
 		("/c/Program Files (x86)/Notepad++/notepad++.exe" "$1" -notabbar -multiInst -nosession &)
 	fi
 }
-
-g() {
-	if [ "$#" -eq 0 ]; then
-		/mingw64/bin/git status --short --branch
-	else
-		/mingw64/bin/git "$@"
-	fi
-}
