@@ -28,7 +28,7 @@ PS1=''
 
 PS1+="\n${usrcol}\h${r} ${pwdcol}\w${r}"
 
-PS1+="${lightgray}"
+PS1+="${yellow}"
 PS1+='`__git_ps1`'
 PS1+="${r}"
 
