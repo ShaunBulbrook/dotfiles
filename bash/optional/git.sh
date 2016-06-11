@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Enable the * in `__git_ps1` when uncommited files
+export GIT_PS1_SHOWDIRTYSTATE=1
+
 alias ga='git add --all --verbose'
 alias gc='git commit -m'
 alias gd='git diff'
