@@ -21,7 +21,7 @@ lightmagenta="\e[95m"
 lightcyan="\e[96m"
 white="\e[97m"
 
-usrcol="${!USERNAMECOLOUR}"
+usrcol="${bold}${!USERNAMECOLOUR}"
 pwdcol="${!PWDCOLOUR}"
 
 PS1=''
@@ -29,10 +29,10 @@ PS1=''
 PS1+="\n${usrcol}\h${r} ${pwdcol}\w${r}"
 
 PS1+="${yellow}"
-PS1+='`__git_ps1`'
+PS1+='`__git_ps1 " %s"`'
 PS1+="${r}"
 
-PS1+="\n${darkgray}»${r} "
+PS1+="\n${bold}${darkgray}»${r} "
 
 export PS1
 
