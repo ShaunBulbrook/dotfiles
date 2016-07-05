@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Enable the * in `__git_ps1` when uncommited files
+export GIT_PS1_SHOWDIRTYSTATE=1
+
 r="\e[0m"
 bold="\e[1m"
 dim="\e[2m"
@@ -35,5 +38,3 @@ PS1+="${r}"
 PS1+="\n${bold}${darkgray}»${r} "
 
 export PS1
-
-# export PS1="\\w\$(__git_ps1 '(%s)') \$ "
