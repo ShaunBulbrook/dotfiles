@@ -3,11 +3,11 @@
 # Enable the * in `__git_ps1` when uncommited files
 export GIT_PS1_SHOWDIRTYSTATE=1
 
-alias ga='git add --all --verbose'
-alias gc='git commit -m'
-alias gd='git diff'
-alias gl="git log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%an)%Creset' -n 10"
-alias gp='git push'
+alias ga='git a'
+alias gc='git c'
+alias gd='git d'
+alias gl='git l'
+alias gp='git p'
 
 g() {
 	if [ "$#" -eq 0 ]; then
