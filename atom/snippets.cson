@@ -18,15 +18,13 @@
 		prefix: "amd"
 		body: """
 		define([
-			'jquery',
-			'core/_accessorMutatorMixin',
 			'core/compose',
-			'core/lang/array',
-			'core/lang/function',
 			'widget/_Base'
-		], function ($, _accessorMutatorMixin, compose, arr, fnc, _Base) {
-			return compose(_Base, _accessorMutatorMixin, {
-				$1
+		], function (compose, _Base) {
+			return compose(_Base, {
+				startup: function() {
+					${1:console.log(this)};
+				}
 			});
 		});
 		"""
