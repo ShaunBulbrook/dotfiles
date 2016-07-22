@@ -3,6 +3,7 @@
 alias ga='git a'
 alias gc='git c'
 alias gd='git d'
+alias gf='git f'
 alias gl='git l'
 alias gp='git p'
 
