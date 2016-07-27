@@ -8,6 +8,10 @@
 	f = fetch --all --prune
 	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' -n 10
 	p = push
+
+	merged = "!f() { git branch --merged $1 | grep -v master | grep -v $1; }; f"
+	merged-r = "!f() { git branch -r --merged $1 | grep -v master | grep -v $1; }; f"
+	week-log = "log --author='Dan D Hughes' --since='one week' --oneline"
 [branch]
 	autosetuprebase = always
 [push]
