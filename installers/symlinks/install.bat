@@ -3,11 +3,11 @@ echo Make sure this is running as admin!
 setlocal disableDelayedExpansion
 
 set "files="
-for %%F in (%HOMEPATH%\.dotfiles\conf\*) do call set files=%%files%%,%%~nF
+for %%F in (%USERPROFILE%\.dotfiles\conf\*) do call set files=%%files%%,%%~nF
 
 for %%f in (%files%) do (
-	IF EXIST %HOMEPATH%\.%%f del /F %HOMEPATH%\.%%f
-	mklink %HOMEPATH%\.%%f %HOMEPATH%\.dotfiles\conf\%%f
+	IF EXIST %USERPROFILE%\.%%f del /F %USERPROFILE%\.%%f
+	mklink %USERPROFILE%\.%%f %USERPROFILE%\.dotfiles\conf\%%f
 )
 
 pause
