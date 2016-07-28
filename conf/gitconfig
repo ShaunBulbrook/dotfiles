@@ -6,7 +6,7 @@
 	c = commit -m
 	d = diff
 	f = fetch --all --prune
-	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' -n 10
+	l = log --branches --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' -n 10
 	p = push
 
 	merged = "!f() { git branch --merged $1 | grep -v master | grep -v $1; }; f"
