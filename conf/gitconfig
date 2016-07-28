@@ -9,9 +9,11 @@
 	l = log --branches --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' -n 10
 	p = push
 
+	feature = "!f() { git checkout -b feature/$1; }; f"
 	merged = "!f() { git branch --merged $1 | grep -v master | grep -v $1; }; f"
 	merged-r = "!f() { git branch -r --merged $1 | grep -v master | grep -v $1; }; f"
 	week-log = "log --author='Dan D Hughes' --since='one week' --oneline"
+	track = "!f() { git branch -u origin/`git rev-parse --abbrev-ref HEAD`; }; f"
 [branch]
 	autosetuprebase = always
 [push]
