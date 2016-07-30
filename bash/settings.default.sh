@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 PUSHBULLET_API_KEY="NULL"
 GPGKEY="NULL"
 
