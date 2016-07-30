@@ -6,6 +6,6 @@ alias gpgify='gpg --encrypt --recipient $GPGKEY --trust-model always --armor'
 alias tmp='cd $(mktemp -d)'
 
 rewrite() {
-    echo "" > $1
-    nano $1
+	echo "" > $1
+	nano $1
 }

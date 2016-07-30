@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$#" -ne 1 ]; then
-    echo "Usage: $0 <Pushbullet API key>"
+	echo "Usage: $0 <Pushbullet API key>"
 	exit 1
 fi
 

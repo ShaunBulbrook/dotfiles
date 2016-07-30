@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$#" -ne 1 ]; then
-    echo "Usage: $0 <GitHub username>"
+	echo "Usage: $0 <GitHub username>"
 	exit 1
 fi
 

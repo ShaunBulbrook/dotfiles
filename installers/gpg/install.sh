@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$#" -ne 1 ]; then
-    echo "Usage: $0 <GPG public ID>"
+	echo "Usage: $0 <GPG public ID>"
 	exit 1
 fi
 
