@@ -16,6 +16,7 @@
     fontSize: 18
     invisibles: {}
     lineHeight: 1.25
+    scrollPastEnd: true
     showIndentGuide: false
     showInvisibles: true
     softTabs: false
