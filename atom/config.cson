@@ -37,6 +37,8 @@
   "tool-bar":
     iconSize: "16px"
     position: "Left"
+  "tree-view":
+    hideIgnoredNames: true
   welcome:
     showOnStartup: false
   whitespace:
