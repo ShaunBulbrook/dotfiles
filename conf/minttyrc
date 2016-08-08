@@ -1,3 +1,4 @@
 BoldAsFont=yes
 Font=Inconsolata
 FontHeight=14
+FontSmoothing=full
