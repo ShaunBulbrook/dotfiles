@@ -2,3 +2,4 @@ BoldAsFont=yes
 Font=Inconsolata
 FontHeight=14
 FontSmoothing=full
+BackgroundColour=32,32,32
