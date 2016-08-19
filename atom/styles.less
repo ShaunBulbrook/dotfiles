@@ -6,12 +6,12 @@
 	visibility: hidden;
 }
 
-// Enable ligatures
+// Enable ligatures, i.e. https://github.com/tonsky/FiraCode
 atom-text-editor::shadow {
 	text-rendering: optimizeLegibility;
 }
 
-// Don't use the bright Material theme colour for scrollbar
+// Use a more subtle grey for scrollbar
 .theme-atom-material-ui /deep/ ::-webkit-scrollbar-thumb {
 	background: rgba(255, 255, 255, 0.05);
 }
@@ -32,10 +32,12 @@ atom-text-editor::shadow .line:not(.cursor-line) .trailing-whitespace {
 	color: contrast(@background-color-error);
 }
 
+// Custom font across the whole UI
 atom-workspace {
 	font-family: Source Sans Pro;
 }
 
+// Hide line numbers except on the current line
 atom-text-editor::shadow .gutter .line-number {
 	color: transparent;
 
