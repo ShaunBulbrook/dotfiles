@@ -1,4 +1,7 @@
 "*":
+  "atom-beautify":
+    general:
+      analytics: false
   core:
     autoHideMenuBar: true
     disabledPackages: [
