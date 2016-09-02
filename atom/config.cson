@@ -10,6 +10,7 @@
     packagesWithKeymapsDisabled: [
       "tool-bar"
     ]
+    telemetryConsent: "limited"
     themes: [
       "nucleus-dark-ui"
       "firewatch-syntax"
