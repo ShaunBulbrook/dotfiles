@@ -7,10 +7,12 @@ alias gf='git f'
 alias gl='git l'
 alias gp='git p'
 
+git="`which git`"
+
 g() {
 	if [ "$#" -eq 0 ]; then
-		/mingw64/bin/git status --short --branch
+		$git status --short --branch
 	else
-		/mingw64/bin/git "$@"
+		$git "$@"
 	fi
 }
