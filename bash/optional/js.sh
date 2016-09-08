@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+PATH="$PATH:~/.npm-global"
+
 function beautify {
 	if [ $# -lt 1 ]; then
 		echo "Usage: $FUNCNAME <file...>"
