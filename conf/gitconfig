@@ -10,6 +10,7 @@
 	p = push
 
 	aliases = "config --get-regexp alias"
+	commend = "commit --amend --no-edit"
 	feature = "!f() { echo feature/$@ | sed -e 's/ /-/g' | xargs git checkout -b; }; f"
 	merged = "!f() { git branch --merged $1 | grep -v master | grep -v $1; }; f"
 	merged-r = "!f() { git branch -r --merged $1 | grep -v master | grep -v $1; }; f"
