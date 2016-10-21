@@ -1,6 +1,7 @@
 [user]
 	name = Dan Hughes
 	email = danhughes.dh+github@gmail.com
+	signingkey = 29EE5514
 [alias]
 	a = add --all --verbose
 	c = commit -m
@@ -38,3 +39,5 @@
 	newNormal = "green bold"
 	oldHighlight = "red bold 52"
 	oldNormal = "red bold"
+[commit]
+	gpgsign = true
