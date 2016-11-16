@@ -25,7 +25,7 @@ atom-workspace {
 }
 
 // Hide line numbers except on the current line
-atom-text-editor::shadow .gutter .line-number {
+atom-text-editor::shadow .gutter .line-number:not(.cursor-line) {
 	color: transparent;
 	transition: color 0.25s ease-out;
 }
