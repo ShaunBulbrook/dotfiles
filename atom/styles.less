@@ -1,19 +1,6 @@
-@import "syntax-variables";
-@import "ui-variables";
-
 // Remove the annoying deprecation alerts for packages
 .status-bar .deprecation-cop-status {
 	visibility: hidden;
-}
-
-// Enable ligatures, i.e. https://github.com/tonsky/FiraCode
-atom-text-editor::shadow {
-	text-rendering: optimizeLegibility;
-}
-
-// Use a more subtle grey for scrollbar
-.theme-atom-material-ui /deep/ ::-webkit-scrollbar-thumb {
-	background: rgba(255, 255, 255, 0.05);
 }
 
 // Pulse the cursor instead of flashing it
@@ -40,12 +27,5 @@ atom-workspace {
 // Hide line numbers except on the current line
 atom-text-editor::shadow .gutter .line-number {
 	color: transparent;
-
 	transition: color 0.25s ease-out;
-
-	&.git-line-added,
-	&.git-line-removed,
-	&.git-line-modified {
-		color: transparent;
-	}
 }
