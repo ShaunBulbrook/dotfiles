@@ -22,7 +22,6 @@
 [core]
 	autocrlf = input
 	editor = 'C:/Program Files (x86)/Notepad++/notepad++.exe'
-	pager = diff-so-fancy | less --tabs=4 -RFX
 [color]
 	ui = always
 [color "diff"]
