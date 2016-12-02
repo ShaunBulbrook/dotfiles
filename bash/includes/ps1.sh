@@ -24,7 +24,11 @@ lightmagenta="\[\e[95m\]"
 lightcyan="\[\e[96m\]"
 white="\[\e[97m\]"
 
-PS1="\n${bold}${!USERNAMECOLOUR}\h${r} ${!PWDCOLOUR}\w${r}"
+if "$BOLDUSERNAME"; then
+	ISBOLD="${bold}"
+fi
+
+PS1="\n${ISBOLD}${!USERNAMECOLOUR}\h${r} ${!PWDCOLOUR}\w${r}"
 
 PS1+="${yellow}"
 PS1+='`__git_ps1 " %s"`'
