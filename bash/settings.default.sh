@@ -1,9 +1,15 @@
 #!/usr/bin/env bash
 
-PUSHBULLET_API_KEY="NULL"
-GPGKEY="NULL"
+export PUSHBULLET_API_KEY=""
+export GPGKEY=""
 
-USERNAMECOLOUR='green'
-PWDCOLOUR='darkgray'
+# export GIT_KEY=""
+export GIT_EMAIL=""
+export GIT_NAME=""
+export GIT_EDITOR=""
 
-OPTIONALS=''
+export USERNAMECOLOUR='green'
+export PWDCOLOUR='darkgray'
+export BOLDUSERNAME=true
+
+export OPTIONALS=''
