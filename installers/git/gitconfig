@@ -1,7 +1,7 @@
 [user]
-	name = Dan Hughes
-	email = danhughes.dh+github@gmail.com
-	signingkey = 29EE5514
+	name = {{ GIT_NAME }}
+	email = {{ GIT_EMAIL }}
+{{ GIT_HAS_KEY }}	signingkey = {{ GIT_KEY }}
 [alias]
 	a = add --all --verbose
 	c = commit -m
@@ -21,7 +21,7 @@
 	default = current
 [core]
 	autocrlf = input
-	editor = 'C:/Program Files (x86)/Notepad++/notepad++.exe'
+	editor = '{{ GIT_EDITOR }}'
 [color]
 	ui = always
 [color "diff"]
@@ -37,4 +37,4 @@
 	oldHighlight = "red bold 52"
 	oldNormal = "red bold"
 [commit]
-	gpgsign = true
+{{ GIT_HAS_KEY }}	gpgsign = true
