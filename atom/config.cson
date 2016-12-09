@@ -16,7 +16,7 @@
       "firewatch-syntax"
     ]
   editor:
-    fontFamily: "Fira Code"
+    fontFamily: "Fira Code Retina"
     fontSize: 16
     invisibles: {}
     scrollPastEnd: true
