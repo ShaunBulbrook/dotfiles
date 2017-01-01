@@ -1,6 +1,10 @@
 # =====
 # VPS servers
 # =====
+Host node1
+	User xes
+	HostName node1.xes.io
+
 Host web0
 	User xes
 	HostName web0.xes.io
