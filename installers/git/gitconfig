@@ -7,7 +7,7 @@
 	c = commit -m
 	d = diff
 	f = fetch --all --prune
-	l = log --branches --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' -n 10
+	l = log --branches --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' -n 10 --all
 	p = push
 	aliases = "config --get-regexp alias"
 	commend = "commit --amend --no-edit"
