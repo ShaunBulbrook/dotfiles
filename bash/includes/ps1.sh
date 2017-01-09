@@ -34,6 +34,6 @@ PS1+="${yellow}"
 PS1+='`__git_ps1 " %s"`'
 PS1+="${r}"
 
-PS1+="\n${bold}${darkgray}»${r} "
+PS1+="\n${bold}${darkgray}>${r} "
 
 export PS1
