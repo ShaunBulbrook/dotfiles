@@ -1,5 +1,5 @@
 BoldAsFont=yes
-Font=Inconsolata
-FontHeight=14
+Font=Hack
+FontHeight=12
 FontSmoothing=full
 BackgroundColour=32,32,32
