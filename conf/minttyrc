@@ -3,3 +3,5 @@ Font=Hack
 FontHeight=12
 FontSmoothing=full
 BackgroundColour=32,32,32
+Locale=en_GB
+Charset=UTF-8
