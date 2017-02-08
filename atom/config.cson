@@ -4,6 +4,7 @@
       analytics: false
   core:
     autoHideMenuBar: true
+    closeDeletedFileTabs: true
     disabledPackages: [
       "wrap-guide"
     ]
