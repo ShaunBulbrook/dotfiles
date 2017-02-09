@@ -5,7 +5,7 @@ if [ "$#" -lt 2 ]; then
 	exit 1
 fi
 
-source /home/pi/.dotfiles/bash/settings.sh
+source /home/pi/.dotfiles/settings.sh
 shopt -s nullglob
 
 input=$1

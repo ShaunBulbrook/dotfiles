@@ -23,12 +23,12 @@ fi
 dfd="$HOME/.dotfiles"
 [[ -d "$HOME/bin" ]] && PATH="$HOME/bin:$PATH"
 
-if [[ -f ${dfd}/bash/settings.sh ]]; then
-    source ${dfd}/bash/settings.sh
+if [[ -f ${dfd}/settings.sh ]]; then
+    source ${dfd}/settings.sh
 else
-    source ${dfd}/bash/settings.default.sh
+    source ${dfd}/example.settings.sh
     echo "Using default settings. Fix:"
-    echo "cp ~/.dotfiles/bash/settings.default.sh ~/.dotfiles/bash/settings.sh"
+    echo "cp ~/.dotfiles/example.settings.sh ~/.dotfiles/settings.sh"
 fi
 
 if [ -d ${dfd}/bash/includes ]; then
