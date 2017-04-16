@@ -37,6 +37,7 @@
     defaultLineEnding: "LF"
   linter: {}
   "linter-jshint": {}
+  "linter-ui-default": {}
   minimap: {}
   "tool-bar":
     iconSize: "16px"
