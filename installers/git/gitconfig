@@ -9,6 +9,7 @@
 	f = fetch --all --prune
 	l = log --branches --graph --pretty=format:'%Cred%h%Creset %Cgreen%cd%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' -n 10 --all --date=short
 	p = push
+	pf = push --force-with-lease
 	aliases = "config --get-regexp alias"
 	commend = "commit --amend --no-edit"
 	unstage = "reset HEAD --"

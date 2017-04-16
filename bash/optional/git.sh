@@ -6,6 +6,7 @@ alias gd='git d'
 alias gf='git f'
 alias gl='git l'
 alias gp='git p'
+alias gpf='git pf'
 
 git="`which git`"
 
