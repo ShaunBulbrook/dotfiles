@@ -40,3 +40,5 @@
 	oldNormal = "red bold"
 [commit]
 {{ GIT_HAS_KEY }}	gpgsign = true
+[status]
+	showUntrackedFiles = all
