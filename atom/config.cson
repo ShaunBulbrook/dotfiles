@@ -25,7 +25,7 @@
     showInvisibles: true
     softTabs: false
     softWrap: true
-    tabLength: 3
+    tabLength: 4
     tabType: "hard"
     zoomFontWhenCtrlScrolling: false
   "exception-reporting":
