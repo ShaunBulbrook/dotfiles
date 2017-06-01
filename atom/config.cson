@@ -36,8 +36,10 @@
   "line-ending-selector":
     defaultLineEnding: "LF"
   linter: {}
-  "linter-jshint": {}
-  "linter-ui-default": {}
+  "linter-eslint":
+    disableWhenNoEslintConfig: false
+  "linter-ui-default":
+    showPanel: true
   minimap: {}
   "tool-bar":
     iconSize: "16px"
