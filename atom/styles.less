@@ -1,15 +1,15 @@
 // Pulse the cursor instead of flashing it
-atom-text-editor::shadow .editor--private .cursors div {
+atom-text-editor.editor .editor--private .cursors div {
 	transition: opacity .3s;
 }
 
 // Make comments non-italic
-atom-text-editor::shadow .comment {
+atom-text-editor.editor .syntax--comment {
 	font-style: normal;
 }
 
 // Highlights trailing whitespace except on the cursor line
-atom-text-editor::shadow .line:not(.cursor-line) .trailing-whitespace {
+atom-text-editor.editor .line:not(.cursor-line) .trailing-whitespace {
 	background-color: @background-color-error;
 	color: contrast(@background-color-error);
 }
@@ -20,7 +20,7 @@ atom-workspace {
 }
 
 // Hide line numbers except on the current line
-atom-text-editor::shadow .gutter .line-number:not(.cursor-line) {
+atom-text-editor.editor .gutter .line-number:not(.cursor-line) {
 	color: transparent;
 	transition: color 0.25s ease-out;
 }
