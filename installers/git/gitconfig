@@ -3,19 +3,57 @@
 	email = {{ GIT_EMAIL }}
 {{ GIT_HAS_KEY }}	signingkey = {{ GIT_KEY }}
 [alias]
-	a = add --all --verbose
-	c = commit -m
-	d = diff
-	f = fetch --all --prune
-	l = log --branches --graph --pretty=format:'%Cred%h%Creset %Cgreen%cd%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' -n 10 --all --date=short
-	p = push
-	pf = push --force-with-lease
+
+	# Add all changes
+	a = "add --all --verbose"
+
+	# Shorthands
+	c = "commit -m"
+	d = "diff"
+	f = "fetch --all --prune"
+	p = "push"
+	pf = "push --force-with-lease"
+
+	# Log with a pretty graph and extra details
+	l = "log --branches --graph --pretty=format:'%Cred%h%Creset %Cgreen%cd%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' -n 10 --all --date=short"
+
+	# Show the files changed in the last few commits
+	ls = "log -n 5 --pretty=format:'%Cred%h%Creset %s %C(bold blue)<%an>%Creset' --numstat"
+
+	# Print out all defined git aliases
 	aliases = "config --get-regexp alias"
-	commend = "commit --amend --no-edit"
+
+	# Edit the message of the last commit
+	reword = "commit -v --amend --only"
+
+	# Combine the staging area with the last commit without editing the message
+	extend = "commit -v --amend --no-edit"
+
+	# Both reword and extend
+	amend = "commit -v --amend"
+
+	# Remove a given file from the staging area
 	unstage = "reset HEAD --"
+
+	# Pop last commit out of the history without losing file changes
+	pop = "reset HEAD^"
+
+	# Show which commits are safe to amend/rebase
+	unpushed = "log @{u}.."
+
+	# Start new feature branch with the given name
 	feature = "!f() { echo feature/$@ | sed -e 's/ /-/g' | xargs git checkout -b; }; f"
+
+	# Start new bugfix branch with the given name
+	bugfix = "!f() { echo bugfix/$@ | sed -e 's/ /-/g' | xargs git checkout -b; }; f"
+
+	# Show which branches have been merged with the given main branch
 	merged = "!f() { git branch --merged $1 | grep -v master | grep -v $1; }; f"
+
+	# Show which branches have been merged with the given main branch on the remote
 	merged-r = "!f() { git branch -r --merged $1 | grep -v master | grep -v $1; }; f"
+
+	# Track the current branch with the same name on the remote
 	track = "!f() { git branch -u origin/`git rev-parse --abbrev-ref HEAD`; }; f"
 [branch]
 	autosetuprebase = always
