@@ -15,10 +15,19 @@
 	pf = "push --force-with-lease"
 
 	# Log with a pretty graph and extra details
-	l = "log --branches --graph --pretty=format:'%Cred%h%Creset %Cgreen%cd%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' -n 10 --all --date=short"
+	l = "log \
+		--branches \
+		--graph \
+		--pretty=format:'%Cred%h%Creset %Cgreen%cd%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' \
+		-n 10 \
+		--all \
+		--date=short"
 
 	# Show the files changed in the last few commits
-	ls = "log -n 5 --pretty=format:'%Cred%h%Creset %s %C(bold blue)<%an>%Creset' --numstat"
+	ls = "log \
+		-n 5 \
+		--pretty=format:'%Cred%h%Creset %s %C(bold blue)<%an>%Creset' \
+		--numstat"
 
 	# Print out all defined git aliases
 	aliases = "config --get-regexp alias"
