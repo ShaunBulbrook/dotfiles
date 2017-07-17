@@ -50,6 +50,9 @@
 	# Show which commits are safe to amend/rebase
 	unpushed = "log @{u}.."
 
+	# Show all remotes
+	remotes = "remote -v"
+
 	# Start new feature branch with the given name
 	feature = "!f() { echo feature/$@ | sed -e 's/ /-/g' | xargs git checkout -b; }; f"
 
