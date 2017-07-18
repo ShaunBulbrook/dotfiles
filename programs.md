@@ -14,6 +14,7 @@ Installs 7zip, Chrome, Dropbox, Notepad++, Python, Spotify, Steam and SumatraPDF
 - [Git](https://git-for-windows.github.io/)
 - [Node](https://nodejs.org/en/)
 - [OpenVPN](https://openvpn.net/index.php/download/community-downloads.html)
+- [Postman](https://www.getpostman.com/)
 - [Resilio Sync](https://www.resilio.com/individuals/)
 - [Vagrant](https://www.vagrantup.com/downloads.html)
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
