@@ -40,7 +40,7 @@
     disableWhenNoEslintConfig: false
   "linter-ui-default":
     showPanel: true
-  minimap: {}
+  "minimap-plus": {}
   "tool-bar":
     iconSize: "16px"
     position: "Left"
