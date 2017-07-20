@@ -44,6 +44,9 @@
 	# Remove a given file from the staging area
 	unstage = "reset HEAD --"
 
+	# Abandon all changes to a file since the last commit
+	forget = "checkout -v --"
+
 	# Pop last commit out of the history without losing file changes
 	pop = "reset HEAD^"
 
