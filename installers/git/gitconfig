@@ -56,6 +56,9 @@
 	# Show all remotes
 	remotes = "remote -v"
 
+	# Show all branches
+	branches = "for-each-ref --format='%(refname:short)' refs/heads"
+
 	# Start new feature branch with the given name
 	feature = "!f() { echo feature/$@ | sed -e 's/ /-/g' | xargs git checkout -b; }; f"
 
