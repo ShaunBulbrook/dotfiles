@@ -32,6 +32,9 @@
 	# Print out all defined git aliases
 	aliases = "config --get-regexp alias"
 
+	# Start repository with an empty commit for rebasing purposes
+	start = "commit --allow-empty -m 'Initial commit'"
+
 	# Edit the message of the last commit
 	reword = "commit -v --amend --only"
 
