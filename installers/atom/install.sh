@@ -4,7 +4,7 @@ SRC="$HOME/.dotfiles/atom"
 DEST="$HOME/.atom"
 BAK="$HOME/atom.bak"
 
-files="config.cson keymap.cson snippets.cson styles.less"
+files="config.json keymap.cson snippets.cson styles.less"
 
 mkdir -p "$BAK"
 
