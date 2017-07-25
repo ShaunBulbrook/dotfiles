@@ -39,6 +39,7 @@
   "linter-eslint":
     disableWhenNoEslintConfig: false
   "linter-ui-default":
+    panelHeight: 60
     showPanel: true
   "minimap-plus": {}
   "tool-bar":
