@@ -15,3 +15,8 @@ function t {
 function mongod {
 	docker run -d -p 27017:27017 -v mongodbdata:/data/db mongo
 }
+
+function httpd {
+	$p = $pwd.Path -replace "\\", "/" -replace ":", ""
+	docker run --name httpd -dit --rm -v /"$p":/usr/local/apache2/htdocs/ -p 8080:80 --sig-proxy=false httpd
+}
