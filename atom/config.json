@@ -14,7 +14,7 @@
       "packagesWithKeymapsDisabled": [
         "tool-bar"
       ],
-      "telemetryConsent": "limited",
+      "telemetryConsent": "no",
       "themes": [
         "nucleus-dark-ui",
         "firewatch-syntax"
