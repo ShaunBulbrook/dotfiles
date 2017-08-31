@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
+#--------------------------------------------------------------------------
+# rc.local
+#--------------------------------------------------------------------------
+#
+# Sends boot notifications to a given Pushbullet API key
+#
+#
 
 if [ "$#" -ne 1 ]; then
 	echo "Usage: $0 <Pushbullet API key>"

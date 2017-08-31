@@ -1,4 +1,13 @@
 #!/usr/bin/env bash
+#--------------------------------------------------------------------------
+# SSH
+#--------------------------------------------------------------------------
+#
+# Sets the allowed users in SSH authorized_keys to be all
+# GitHub SSH keys for a given username. Also disables
+# password access for key-only login
+#
+#
 
 if [ "$#" -ne 1 ]; then
 	echo "Usage: $0 <GitHub username>"

@@ -1,0 +1,23 @@
+DFD="$HOME/.dotfiles"
+
+if [[ -f ${DFD}/.env ]]; then
+	source ${DFD}/.env
+else
+	echo -e "\033[0;33mWarning: no .env file present. Using default settings (example.env).\033[0m"
+	source ${DFD}/example.env
+fi
+
+PATH="$DFD/bin:$PATH"
+
+source "$DFD/aliases.sh"
+source "$DFD/ps1.sh"
+source "$DFD/shopt.sh"
+
+# Set terminal title if using xterm
+case "$TERM" in
+xterm*|rxvt*)
+	PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+	;;
+*)
+	;;
+esac

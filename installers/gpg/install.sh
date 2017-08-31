@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
+#--------------------------------------------------------------------------
+# GPG
+#--------------------------------------------------------------------------
+#
+# Imports a public GPG key from a given public ID on pgp.mit.edu 
+#
+#
 
 if [ "$#" -ne 1 ]; then
 	echo "Usage: $0 <GPG public ID>"
