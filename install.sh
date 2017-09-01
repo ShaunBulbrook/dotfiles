@@ -7,7 +7,14 @@
 #
 #
 DFD="$HOME/.dotfiles"
-[ -f "$HOME/.dotfiles/.env" ] && source "$HOME/.dotfiles/.env"
+
+# Creates a sample .env file.
+if [ -f "$DFD/.env" ]; then
+	source "$DFD/.env"
+else
+	cp "$DFD/example.env" "$DFD/.env"
+	echo "Created .env file. Update this with your own settings, then run 'dotfiles reload'."
+fi
 
 # Copies all link files to their dot-prefixed equivalent.
 # I.e, config/link/bashrc => ~/.bashrc
@@ -26,27 +33,32 @@ for f in $DFD/config/atom/*; do
 	echo ":: $file"
 done
 
-# Copies SSH configuration.
-cp $DFD/config/ssh/config "$HOME/.ssh/config"
-echo ":: $HOME/.ssh/config"
-
 # Creates gitconfig.
-cp "$DFD/config/git/gitconfig" "$DFD/tmp"
 [ -z "$GIT_EMAIL" ] && _if_email=';'
 [ -z "$GIT_NAME" ] && _if_name=';'
 [ -z "$GIT_SIGNING_KEY" ] && _if_key=';'
-sed -i "s/{{ _if_email }}/$_if_email/g" "$DFD/tmp"
-sed -i "s/{{ GIT_EMAIL }}/$GIT_EMAIL/g" "$DFD/tmp"
-sed -i "s/{{ _if_name }}/$_if_name/g" "$DFD/tmp"
-sed -i "s/{{ GIT_NAME }}/$GIT_NAME/g" "$DFD/tmp"
-sed -i "s/{{ _if_key }}/$_if_key/g" "$DFD/tmp"
-sed -i "s/{{ GIT_KEY }}/$GIT_SIGNING_KEY/g" "$DFD/tmp"
-sed -i "s/{{ GIT_EDITOR }}/$GIT_EDITOR/g" "$DFD/tmp"
-mv "$DFD/tmp" "$HOME/.gitconfig"
+cat "$DFD/config/git/gitconfig" | \
+sed -e "s/{{ _if_email }}/$_if_email/g" | \
+sed -e "s/{{ GIT_EMAIL }}/$GIT_EMAIL/g" | \
+sed -e "s/{{ _if_name }}/$_if_name/g" | \
+sed -e "s/{{ GIT_NAME }}/$GIT_NAME/g" | \
+sed -e "s/{{ _if_key }}/$_if_key/g" | \
+sed -e "s/{{ GIT_KEY }}/$GIT_SIGNING_KEY/g" | \
+sed -e "s/{{ GIT_EDITOR }}/$GIT_EDITOR/g" \
+> "$HOME/.gitconfig"
 echo ":: $HOME/.gitconfig"
 
-# Creates a sample .env file.
-if [ ! -f "$DFD/.env" ]; then
-	cp "$DFD/example.env" "$DFD/.env"
-	echo "Created .env file. Update this with your own settings, then run 'dotfiles reload'."
+# Creates ssh config
+SSH_CONTENT=''
+if [ -n "$SSH_CONFIG" ]; then
+	for server in $SSH_CONFIG; do
+		IFS=':' read host user hostname <<< "$server"
+
+		SSH_CONTENT=$SSH_CONTENT"Host $host\n"
+		SSH_CONTENT=$SSH_CONTENT"\tUser $user\n"
+		SSH_CONTENT=$SSH_CONTENT"\tHostName $hostname\n\n"
+	done
+	mkdir -p "$HOME/.ssh"
+	echo -e "$SSH_CONTENT" > "$HOME/.ssh/config"
+	echo ":: $HOME/.ssh/config"
 fi
