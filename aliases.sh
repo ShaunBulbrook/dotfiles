@@ -12,6 +12,14 @@ alias ls='ls --color -F --group-directories-first'
 alias grep='grep --color=auto'
 alias less='less -r'
 
+# Git shorthands
+alias ga='git a'
+alias gc='git c'
+alias gd='git d'
+alias gf='git f'
+alias gp='git p'
+alias gpf='git pf'
+
 function reload() {
 	clear; source "$HOME/.bashrc"
 }
