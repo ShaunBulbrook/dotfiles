@@ -37,6 +37,41 @@
 	"Use strict":
 		prefix: "strict"
 		body: "'use strict';"
+	"React skeleton":
+		prefix: "react"
+		body: """
+		import React from 'react';
+
+		export default class ${1:Module} extends React.Component {
+
+			render() {
+				return (
+					<div className="${1:Module}">${1:Module}</div>
+				);
+			}
+
+		}
+		"""
+	"FSC React":
+		prefix: "fsc"
+		body: """
+		import React from 'react';
+		import PropTypes from 'prop-types';
+
+		import './${1:Module}.css';
+
+		const ${1:Module} = ({ something }) => (
+			<div className="${1:Module}">
+				<p>${1:Module}</p>
+			</div>
+		);
+
+		${1:Module}.propTypes = {
+			something: PropTypes.string.isRequired,
+		};
+
+		export default ${1:Module};
+		"""
 
 # =============================
 # Any
