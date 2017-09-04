@@ -72,7 +72,7 @@
 	merged = "!f() { git branch --merged $1 | grep -v master | grep -v $1; }; f"
 
 	# Show which branches have been merged with the given main branch on the remote
-	merged-r = "!f() { git branch -r --merged $1 | grep -v master | grep -v $1; }; f"
+	merged-r = "!f() { git branch -r --merged $1 | grep -v master | grep -v $1 | sed -e 's/\origin\///g'; }; f"
 
 	# Track the current branch with the same name on the remote
 	track = "!f() { git branch -u origin/`git rev-parse --abbrev-ref HEAD`; }; f"
