@@ -45,7 +45,8 @@
     },
     "linter": {},
     "linter-eslint": {
-      "disableWhenNoEslintConfig": false
+      "disableWhenNoEslintConfig": false,
+      "useGlobalEslint": true
     },
     "linter-ui-default": {
       "panelHeight": 60,
