@@ -72,6 +72,17 @@
 
 		export default ${1:Module};
 		"""
+	"Polymer component":
+		prefix: "polymer"
+		body: """
+		class ${1:Component} extends Polymer.Element {
+			static get is() {
+				return '${2:component}';
+			}
+		}
+
+		window.customElements.define(${1:Component}.is, ${1:Component});
+		"""
 
 # =============================
 # Any
