@@ -19,12 +19,8 @@ PUBLICIP=$(curl -sS canihazip.com/s)
 LOCALIP=$(hostname -I)
 MACHINE=$(hostname)
 
-# Send boot notification
-curl \
-	-u XXAPIKEYXX: https://api.pushbullet.com/v2/pushes \
-	-d type=note \
-	-d title="$MACHINE" \
-	-d body="$LOCALIP : $PUBLICIP" \
-	> /dev/null
+text="$MACHINE%0A$LOCALIP : $PUBLICIP"
+
+curl -sS "https://api.telegram.org/botXXTOKENXX/sendMessage?chat_id=XXCHATIDXX&text=$text" > /dev/null
 
 exit 0
