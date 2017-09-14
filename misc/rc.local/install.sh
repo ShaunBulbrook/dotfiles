@@ -17,6 +17,7 @@ TELEGRAM_CONFIG=$1
 IFS='|' read chatID token <<< "$TELEGRAM_CONFIG"
 
 cp rc.local rc.local.temp
+chmod 755 rc.local.temp
 sed -i "s/XXCHATIDXX/$chatID/g" rc.local.temp
 sed -i "s/XXTOKENXX/$token/g" rc.local.temp
 
