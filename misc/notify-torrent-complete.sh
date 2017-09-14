@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source /home/pi/.dotfiles/settings.sh
+. /home/pi/.dotfiles/settings.sh
 
 id=$1
 name=$2

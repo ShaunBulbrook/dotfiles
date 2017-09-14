@@ -10,7 +10,7 @@ DFD="$HOME/.dotfiles"
 
 # Creates a sample .env file.
 if [ -f "$DFD/.env" ]; then
-	source "$DFD/.env"
+	. "$DFD/.env"
 else
 	cp "$DFD/example.env" "$DFD/.env"
 	echo "Created .env file. Update this with your own settings, then run 'dotfiles reload'."
