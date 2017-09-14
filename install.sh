@@ -26,6 +26,7 @@ for f in $DFD/config/link/*; do
 done
 
 # Copies all Atom configuration.
+mkdir -p "$HOME/.atom"
 for f in $DFD/config/atom/*; do
 	file="$HOME/.atom/$(basename "$f")"
 	rm "$file" 2> /dev/null
