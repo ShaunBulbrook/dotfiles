@@ -5,8 +5,10 @@ if [ "$#" -lt 2 ]; then
 	exit 1
 fi
 
-. /home/pi/.dotfiles/settings.sh
+. /home/pi/.dotfiles/.env
 shopt -s nullglob
+
+IFS='|' read chatID token <<< "$TELEGRAM_CONFIG"
 
 input=$1
 output=$2
@@ -18,12 +20,8 @@ find "$input" -type f -not -path '*/\.*' -print0 | while IFS= read -r -d $'\0' F
 		mv "$FILE" "$output"
 
 		if [[ $? -eq 0 ]]; then
-			curl -sS \
-			-u "$PUSHBULLET_API_KEY:" https://api.pushbullet.com/v2/pushes \
-			-d type=note \
-			-d title="File added to Sync" \
-			-d body="$filename" \
-			> /dev/null
+			text="File added to Sync%0A$filename"
+			curl -sS "https://api.telegram.org/bot$token/sendMessage?chat_id=$chatID&text=$text" > /dev/null
 		fi
 	fi
 done
