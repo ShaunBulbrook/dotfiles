@@ -13,6 +13,10 @@ source "$DFD/aliases.sh"
 source "$DFD/ps1.sh"
 source "$DFD/shopt.sh"
 
+if [ -d "$HOME/.npm-global" ]; then
+	PATH="$PATH:$HOME/.npm-global/bin"
+fi
+
 # Set terminal title if using xterm
 case "$TERM" in
 xterm*|rxvt*)
