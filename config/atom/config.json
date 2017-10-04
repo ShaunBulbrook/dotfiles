@@ -24,6 +24,7 @@
       "fontFamily": "Fira Code Retina",
       "fontSize": 16,
       "invisibles": {},
+      "lineHeight": 1.75,
       "scrollPastEnd": true,
       "showIndentGuide": false,
       "showInvisibles": true,
