@@ -13,6 +13,10 @@ source "$DFD/aliases.sh"
 source "$DFD/ps1.sh"
 source "$DFD/shopt.sh"
 
+if [[ -f "/etc/bash_completion.d/git-prompt" ]]; then
+	source /etc/bash_completion.d/git-prompt
+fi
+
 if [ -d "$HOME/.npm-global" ]; then
 	PATH="$PATH:$HOME/.npm-global/bin"
 fi
