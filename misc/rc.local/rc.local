@@ -15,12 +15,12 @@
 mount -a
 
 # Figure out machine details
-PUBLICIP=$(curl -sS canihazip.com/s)
-LOCALIP=$(hostname -I)
-MACHINE=$(hostname)
+PUBLICIP="$(curl -sSL 'https://api.ipify.org')"
+LOCALIP="$(hostname -I)"
+MACHINE="$(hostname)"
 
-text="$MACHINE%0A$LOCALIP : $PUBLICIP"
+text="$MACHINE%0A$LOCALIP%20:%20$PUBLICIP"
 
-curl -sS "https://api.telegram.org/botXXTOKENXX/sendMessage?chat_id=XXCHATIDXX&text=$text" > /dev/null
+curl -sSL "https://api.telegram.org/botXXTOKENXX/sendMessage?chat_id=XXCHATIDXX&text=$text" > /dev/null
 
 exit 0
