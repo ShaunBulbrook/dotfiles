@@ -41,16 +41,29 @@
 		prefix: "react"
 		body: """
 		import React from 'react';
+		import PropTypes from 'prop-types';
 
-		export default class ${1:Module} extends React.Component {
+		import './${1:Module}.css';
+
+		class ${1:Module} extends React.Component {
+			constructor(props) {
+				super(props);
+			}
 
 			render() {
 				return (
-					<div className="${1:Module}">${1:Module}</div>
+					<div className="${1:Module}">
+						<p>${1:Module}</p>
+					</div>
 				);
 			}
-
 		}
+
+		${1:Module}.propTypes = {
+			something: PropTypes.string.isRequired,
+		};
+
+		export default ${1:Module};
 		"""
 	"FSC React":
 		prefix: "fsc"
