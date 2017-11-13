@@ -8,7 +8,7 @@
 	a = "add --all --verbose"
 
 	# Shorthands
-	c = "commit -m"
+	c = "commit --verbose"
 	d = "diff"
 	f = "fetch --all --prune"
 	p = "push"
