@@ -71,7 +71,8 @@ module.exports = {
 		'hyper-firewatch',
 		'hyperterm-alternatescroll',
 		'hyperlinks',
-		'hyperborder'
+		'hyperborder',
+		'gitrocket'
 	],
 
 	localPlugins: [],
