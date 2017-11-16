@@ -21,7 +21,7 @@ module.exports = {
 		cursorShape: 'BEAM',
 
 		// set to true for blinking cursor
-		cursorBlink: true,
+		cursorBlink: false,
 
 		// custom padding (css format, i.e.: `top right bottom left`)
 		padding: '12px 14px',
@@ -65,9 +65,6 @@ module.exports = {
 		// for advanced config flags please refer to https://hyper.is/#cfg
 
 		// --- Plugin configs ----
-		hyperBorder: {
-			borderColors: ['#dd6dfb', '#01cdfe']
-		}
 	},
 
 	plugins: [
