@@ -68,11 +68,12 @@ module.exports = {
 	},
 
 	plugins: [
+		'gitrocket',
+		'hyper-broadcast',
 		'hyper-firewatch',
-		'hyperterm-alternatescroll',
-		'hyperlinks',
 		'hyperborder',
-		'gitrocket'
+		'hyperlinks',
+		'hyperterm-alternatescroll',
 	],
 
 	localPlugins: [],
