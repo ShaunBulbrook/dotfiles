@@ -74,6 +74,7 @@ module.exports = {
 		'hyperborder',
 		'hyperlinks',
 		'hyperterm-alternatescroll',
+		'hyperterm-cursor',
 	],
 
 	localPlugins: [],
