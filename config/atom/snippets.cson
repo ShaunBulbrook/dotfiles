@@ -85,6 +85,9 @@
 
 		export default ${1:Module};
 		"""
+	"React debug":
+		prefix: "rdb"
+		body: "<pre><code>{JSON.stringify(${1:this.state}, null, 4)}</code></pre>"
 	"Polymer component":
 		prefix: "polymer"
 		body: """
