@@ -18,7 +18,8 @@
       "themes": [
         "nucleus-dark-ui",
         "firewatch-syntax"
-      ]
+      ],
+      "uriHandlerRegistration": "always"
     },
     "editor": {
       "fontFamily": "Fira Code Retina",
