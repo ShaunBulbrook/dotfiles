@@ -54,6 +54,15 @@
       "showPanel": true
     },
     "minimap-plus": {},
+    "prettier-atom": {
+      "formatOnSaveOptions": {
+        "enabled": true,
+        "isDisabledIfNotInPackageJson": true,
+        "showInStatusBar": true
+      },
+      "useEditorConfig": false,
+      "useEslint": true
+    },
     "tool-bar": {
       "iconSize": "16px",
       "position": "Left"
