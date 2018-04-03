@@ -2,3 +2,5 @@
 	'ctrl-shift-down': 'editor:move-line-down'
 	'ctrl-shift-up': 'editor:move-line-up'
 	'ctrl-s': 'window:save-all'
+'atom-text-editor[data-grammar~="jsx"]:not([mini])':
+	'tab': 'emmet:expand-abbreviation-with-tab'
