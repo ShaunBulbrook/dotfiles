@@ -14,90 +14,71 @@
 # JavaScript
 # =============================
 ".js":
-	"AMD module":
-		prefix: "amd"
+	"Import module":
+		prefix: "import"
+		body: "import ${1:module} from '${1:module}';"
+	"Export module":
+		prefix: "export"
+		body: "export default ${1:module};"
+	"React stateful component":
+		prefix: "reactcomponent"
 		body: """
-		define([
-			'core/compose',
-			'widget/_Base'
-		], function (compose, _Base) {
-			return compose(_Base, {
-				startup: function() {
-					${1:console.log(this)};
-				}
-			});
-		});
-		"""
-	"Quick log":
-		prefix: "here"
-		body: "console.log('here');"
-	"Throw error":
-		prefix: "throw"
-		body: "if (${1:err}) throw ${1:err};"
-	"Use strict":
-		prefix: "strict"
-		body: "'use strict';"
-	"React skeleton":
-		prefix: "react"
-		body: """
-		import React from 'react';
-		import PropTypes from 'prop-types';
-
-		import './${1:Module}.css';
-
-		class ${1:Module} extends React.Component {
+		class ${1:Component} extends React.Component {
 			constructor(props) {
 				super(props);
+				this.state = {};
+				bindMethods(this);
 			}
 
 			render() {
+				const { children } = this.props;
 				return (
-					<div className="${1:Module}">
-						<p>${1:Module}</p>
+					<div className="${1:Component}">
+						<p>{children}</p>
 					</div>
 				);
 			}
 		}
-
-		${1:Module}.propTypes = {
-			something: PropTypes.string.isRequired,
-		};
-
-		export default ${1:Module};
 		"""
-	"FSC React":
-		prefix: "fsc"
+	"React FSC component":
+		prefix: "reactfsc"
 		body: """
-		import React from 'react';
-		import PropTypes from 'prop-types';
-
-		import './${1:Module}.css';
-
-		const ${1:Module} = ({ something }) => (
-			<div className="${1:Module}">
-				<p>${1:Module}</p>
+		const ${1:Component} = ({ children }) => (
+			<div className="${1:Component}">
+				<p>{children}</p>
 			</div>
 		);
-
-		${1:Module}.propTypes = {
-			something: PropTypes.string.isRequired,
-		};
-
-		export default ${1:Module};
 		"""
 	"React debug":
-		prefix: "rdb"
+		prefix: "reactdebug"
 		body: "<pre><code>{JSON.stringify(${1:this.state}, null, 4)}</code></pre>"
-	"Polymer component":
-		prefix: "polymer"
+	"Prop types object":
+		prefix: "proptypesobject"
 		body: """
-		class ${1:Component} extends Polymer.Element {
-			static get is() {
-				return '${2:component}';
-			}
+		${1:Component}.propTypes = {
+			children: PropTypes.string.isRequired,
+		};
+		"""
+	"Prop types method":
+		prefix: "proptypesmethod"
+		body: """
+		static get propTypes() {
+			return {};
 		}
-
-		window.customElements.define(${1:Component}.is, ${1:Component});
+		"""
+	"Default props object":
+		prefix: "defaultpropsobject"
+		body: """
+		${1:Component}.defaultProps = {
+			children: PropTypes.string.isRequired,
+		};
+		"""
+	"Default props method":
+		prefix: "defaultpropsmethod"
+		body: """
+		static get defaultProps() {
+			return {};
+		}
 		"""
 
 # =============================
