@@ -76,6 +76,9 @@
 
 	# Track the current branch with the same name on the remote
 	track = "!f() { git branch -u origin/`git rev-parse --abbrev-ref HEAD`; }; f"
+
+	# Update the master branch of the fork
+	forkup = "!f() { git checkout master && git f && git merge upstream/master --ff-only; }; f"
 [branch]
 	autosetuprebase = always
 [push]
