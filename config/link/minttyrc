@@ -1,7 +1,8 @@
 BoldAsFont=yes
-Font=Lucida Console
+Font=Consolas
 FontHeight=14
 FontSmoothing=full
 BackgroundColour=32,32,64
 Locale=en_GB
 Charset=UTF-8
+BoldAsColour=yes
