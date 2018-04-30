@@ -1,11 +1,5 @@
 atom-text-editor.editor {
 	-webkit-font-smoothing: antialiased;
-}
-
-// Make comments fancy
-atom-text-editor.editor .syntax--comment {
-	font-family: "Operator Mono";
-	font-weight: 300;
 	text-rendering: optimizeLegibility;
 }
 
@@ -13,10 +7,4 @@ atom-text-editor.editor .syntax--comment {
 atom-text-editor.editor .line:not(.cursor-line) .trailing-whitespace {
 	background-color: @background-color-error;
 	color: contrast(@background-color-error);
-}
-
-// Hide line numbers except on the current line
-atom-text-editor.editor .gutter .line-number:not(.cursor-line) {
-	color: transparent;
-	transition: color 0.25s ease-out;
 }

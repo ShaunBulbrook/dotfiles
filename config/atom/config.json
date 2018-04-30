@@ -22,13 +22,17 @@
       "uriHandlerRegistration": "always"
     },
     "editor": {
-      "fontFamily": "Fira Code Retina",
-      "fontSize": 16,
-      "invisibles": {},
+      "fontFamily": "Operator Mono",
+      "fontSize": 17,
+      "invisibles": {
+        "tab": false,
+        "eol": false
+      },
       "lineHeight": 1.75,
       "scrollPastEnd": true,
       "showIndentGuide": false,
       "showInvisibles": true,
+      "showLineNumbers": false,
       "softTabs": false,
       "softWrap": true,
       "tabLength": 4,
