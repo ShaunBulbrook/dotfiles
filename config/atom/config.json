@@ -64,6 +64,9 @@
         "isDisabledIfNotInPackageJson": true,
         "showInStatusBar": true
       },
+      "prettierOptions": {
+        "useTabs": true
+      },
       "useEditorConfig": false,
       "useEslint": true
     },
