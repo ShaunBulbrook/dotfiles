@@ -2,3 +2,4 @@
 
 "$HOME/.dotfiles/install.sh"
 . "$HOME/.bashrc"
+reload
