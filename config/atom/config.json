@@ -22,7 +22,7 @@
       "uriHandlerRegistration": "always"
     },
     "editor": {
-      "fontFamily": "Operator Mono",
+      "fontFamily": "Fira Code Medium",
       "fontSize": 19,
       "invisibles": {
         "tab": false,
