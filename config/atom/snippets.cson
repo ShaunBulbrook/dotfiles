@@ -17,12 +17,6 @@
 	"Log":
 		prefix: "log"
 		body: "console.log(${1})"
-	"Import module":
-		prefix: "import"
-		body: "import ${1:module} from '${1:module}';"
-	"Export module":
-		prefix: "export"
-		body: "export default ${1:module};"
 	"React stateful component":
 		prefix: "reactcomponent"
 		body: """
