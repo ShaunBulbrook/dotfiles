@@ -79,6 +79,9 @@
 
 	# Update the master branch of the fork
 	forkup = "!f() { git checkout master && git f && git merge upstream/master --ff-only; }; f"
+
+	# Generate .gitignore files from passed arguments, i.e. "git ignore node,angular"
+	ignore = "!f() { curl -sSL \"gitignore.io/api/$@\"; }; f"
 [branch]
 	autosetuprebase = always
 [push]
