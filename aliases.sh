@@ -104,3 +104,11 @@ function copy() {
 function paste() {
 	cat /dev/clipboard
 }
+
+function explorer() {
+	if [ "$#" -eq 0 ]; then
+		gtk-launch nautilus .
+	else
+		gtk-launch nautilus "$@"
+	fi
+}
