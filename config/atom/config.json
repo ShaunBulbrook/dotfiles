@@ -22,13 +22,13 @@
       "uriHandlerRegistration": "always"
     },
     "editor": {
-      "fontFamily": "Fira Code Medium",
-      "fontSize": 19,
+      "fontFamily": "Dank Mono",
+      "fontSize": 20,
       "invisibles": {
         "tab": false,
         "eol": false
       },
-      "lineHeight": 1.8,
+      "lineHeight": 1.75,
       "scrollPastEnd": true,
       "showIndentGuide": false,
       "showInvisibles": true,
