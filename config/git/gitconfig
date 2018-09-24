@@ -90,7 +90,7 @@
 	autocrlf = input
 	editor = '{{ GIT_EDITOR }}'
 [color]
-	ui = always
+	ui = auto
 [color "diff"]
 	commit = "green bold"
 	frag = "magenta bold"
