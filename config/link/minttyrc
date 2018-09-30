@@ -6,3 +6,4 @@ BackgroundColour=32,32,64
 Locale=en_GB
 Charset=UTF-8
 BoldAsColour=yes
+BellType=0
