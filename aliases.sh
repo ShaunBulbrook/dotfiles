@@ -20,6 +20,10 @@ alias gf='git f'
 alias gp='git p'
 alias gpf='git pf'
 
+# Git tab completion
+__git_complete gc _git_checkout
+__git_complete g _git
+
 function reload() {
 	clear; source "$HOME/.bashrc"
 }
