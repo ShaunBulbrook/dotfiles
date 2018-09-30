@@ -96,19 +96,6 @@ function vm() {
 	fi
 }
 
-function copy() {
-	if [ -t 0 ]; then
-		cat $@ > /dev/clipboard
-	else
-		/dev/clipboard < /dev/stdin
-	fi
-	echo "Copied $(cat /dev/clipboard | wc -l) lines to clipboard"
-}
-
-function paste() {
-	cat /dev/clipboard
-}
-
 function explorer() {
 	if [ "$#" -eq 0 ]; then
 		gtk-launch nautilus .
