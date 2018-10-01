@@ -21,8 +21,12 @@ alias gp='git p'
 alias gpf='git pf'
 
 # Git tab completion
-__git_complete gc _git_checkout
 __git_complete g _git
+__git_complete ga _git_add
+__git_complete gc _git_commit
+__git_complete gd _git_diff
+__git_complete gf _git_fetch
+__git_complete gp _git_push
 
 function reload() {
 	clear; source "$HOME/.bashrc"
