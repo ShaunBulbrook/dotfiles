@@ -7,17 +7,18 @@ else
 	source ${DFD}/example.env
 fi
 
+# Sourcing a bunch of git stuff
+[[ -f "/etc/bash_completion.d/git-prompt" ]] && source /etc/bash_completion.d/git-prompt
+[[ -f "/etc/bash_completion" ]] && source /etc/bash_completion
+[[ -f "/usr/share/bash-completion/completions/git" ]] && source /usr/share/bash-completion/completions/git
+
 PATH="$DFD/bin:$PATH"
 
 source "$DFD/aliases.sh"
 source "$DFD/ps1.sh"
 source "$DFD/shopt.sh"
 
-if [[ -f "/etc/bash_completion.d/git-prompt" ]]; then
-	source /etc/bash_completion.d/git-prompt
-fi
-
-if [ -d "$HOME/.npm-global" ]; then
+if [[ -d "$HOME/.npm-global" ]]; then
 	PATH="$PATH:$HOME/.npm-global/bin"
 fi
 
